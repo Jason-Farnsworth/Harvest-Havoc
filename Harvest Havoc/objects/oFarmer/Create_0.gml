@@ -1,0 +1,9 @@
+horiz_move_speed = 0;
+vert_move_speed = 0;
+grav = 0.5;
+walk_speed = 3;
+grounded = false;
+gameOver = false;
+gameOverTimer = 40;
+terrain = [oDirt]
+isRight = true;
