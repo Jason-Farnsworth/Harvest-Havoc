@@ -31,63 +31,46 @@ y = y + vert_move_speed;
 
 
 //Obstacle Detection
-var enemyCheck1 = instance_place(x, y, [oSickle, oHoneycomb, oSquirrel])
-if (enemyCheck1 != noone){
-	if (canDestroy) && (enemyCheck1 != iShrub1) || (enemyCheck1 != iShrub2){
-		show_debug_message(enemyCheck1);
-		instance_destroy(other, false);
-	}
-	else if (isInvincible){
-	invincibleTimer -= 1;
-		if (invincibleTimer < 0){
-			show_debug_message("hi")
-			isInvincible = false;
-			invincibleTimer = 20;
-		}
-	}
-	else if (!isInvincible){
-		global.player_lives -=1;
-		if global.player_lives > 0{
-			//give player i-frames and knock them back a bit
-			isInvincible = true;
-			if (isRight){
-				x -= 40;
-			}
-			else{
-				x += 40;
-			}
-		}
-	else oControl.game_over = true;
-	}
-}
-
-var enemyCheck2 = instance_place(x, y, oShrub)
-if (enemyCheck2 != noone){
+var shrubCheck = instance_place(x, y, oShrub)
+if (shrubCheck != noone){
 	if (isInvincible){
-	invincibleTimer -= 1;
-		if (invincibleTimer < 0){
-			show_debug_message("hi")
-			isInvincible = false;
-			invincibleTimer = 20;
-		}
 	}
 	else if (!isInvincible){
-		global.player_lives -=1;
 		if global.player_lives > 0{
 			//give player i-frames and knock them back a bit
 			isInvincible = true;
+			flashActive = true;
 			if (isRight){
 				x -= 40;
 			}
 			else{
 				x += 40;
 			}
+		global.player_lives -=1;
+		
 		}
 	else oControl.game_over = true;
 	}
 }
 
 
+//Keeping track of invincibility 
+if (isInvincible){
+		invincibleTimer -= 1;
+		if (invincibleTimer < 0){
+			isInvincible = false;
+			invincibleTimer = 30;
+			flashActive = false;
+		}
+	}
+
+if (flashActive){
+	if (flashSpeed % 5 == 0){
+		if (flashAlpha == 0) flashAlpha = 1;
+		else flashAlpha = 0
+	}
+	flashSpeed += 3;
+}
 
 //Power Up Timers
 if (hasBoot){
