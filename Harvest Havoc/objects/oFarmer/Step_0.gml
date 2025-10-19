@@ -47,10 +47,11 @@ if (shrubCheck != noone){
 				x += 40;
 			}
 		global.player_lives -=1;
-		
 		}
-	else oControl.game_over = true;
 	}
+}
+if (global.player_lives < 1){
+	oControl.game_over = true;
 }
 
 
@@ -96,7 +97,11 @@ if (canDestroy){
 
 
 //Animation
-if (horiz_move_speed !=0){
+if (oControl.game_over){
+	sprite_index = sFarmerGameOver;
+	image_speed = 0.2;
+}
+else if (horiz_move_speed !=0){
 	if (canDestroy) && (hasBoot){
 		sprite_index = sFarmerMove_Both;
 		image_speed = 0.5;
@@ -132,7 +137,8 @@ else{
 		image_speed = 0.5;
 	}
 }
+
 if (horiz_move_speed !=0){ 
-image_xscale = sign(horiz_move_speed) * 1;
-isRight = sign(horiz_move_speed) > 0;
+	image_xscale = sign(horiz_move_speed) * 1;
+	isRight = sign(horiz_move_speed) > 0;
 }

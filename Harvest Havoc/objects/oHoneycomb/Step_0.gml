@@ -1,4 +1,10 @@
-image_angle -= 2;
+if (oControl.game_over){
+	grav = 0;
+}
+if (!oControl.game_over){
+	image_angle -= 2;
+}
+
 y_vel = grav;
 y = y + y_vel;
 
