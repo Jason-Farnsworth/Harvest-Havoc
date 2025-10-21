@@ -10,6 +10,7 @@ if (game_over){
 	draw_set_halign(fa_center);
 	draw_text(670, 250, "GAME OVER");
 	draw_text(670, 350, "Press Space to Restart");
+	draw_text(670, 450, "Press Escape to Quit");
 }
 var pos_x = 1210
 repeat (global.player_lives){

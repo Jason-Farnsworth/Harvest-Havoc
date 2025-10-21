@@ -5,6 +5,6 @@ spawnTimer_3 = 50; //spawning powerups will be offset by 50 seconds when compare
 spawnTimerCutoff = 100;
 food = [oPear, oPepper, oPumpkin];
 obstacles = [oHoneycomb, oSickle, oSquirrel]
-powerups = [oHeart, oBoots, oGlove]
+powerups = [oHeart, oBoots, oGlove, oBasket]
 list_length_1 = array_length(food)
 list_length_2 = array_length(powerups)

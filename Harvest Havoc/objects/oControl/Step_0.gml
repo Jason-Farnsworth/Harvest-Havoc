@@ -18,4 +18,7 @@ if (game_over){
 		game_over = false;
 		
 	}
+	else if keyboard_check(vk_escape){
+		game_end();
+	}
 }

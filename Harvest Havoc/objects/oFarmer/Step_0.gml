@@ -1,7 +1,8 @@
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 
-var move = key_right - key_left;
+if (!oControl.game_over) var move = key_right - key_left;
+else move = 0
 
 if (hasBoot){
 	horiz_move_speed = (move * walk_speed) * 2;
@@ -10,6 +11,8 @@ else{
 	horiz_move_speed = move * walk_speed;
 }
 vert_move_speed = vert_move_speed + grav;
+show_debug_message(horiz_move_speed)
+
 
 //Horizontal Geometry Collision
 if (place_meeting(x+horiz_move_speed, y, terrain)){

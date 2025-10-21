@@ -10,7 +10,8 @@ y = y + y_vel
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
 	if (playerCheck.canDestroy){
-		global.player_score += 2000;
+		if (playerCheck.hasBoot) global.player_score += 4000; 
+		else global.player_score += 2000;
 		instance_destroy(self, false);
 	}
 	else if (playerCheck.isInvincible){
