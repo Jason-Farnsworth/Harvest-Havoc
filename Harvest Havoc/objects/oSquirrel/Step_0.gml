@@ -1,9 +1,12 @@
-if (oControl.game_over){
+if (oControl.game_over) || (oControl.pause){
 	grav = 0;
+	image_angle = image_angle;
 }
-if (!oControl.game_over){
+else {	
 	image_angle -= 2;
+	grav = 2;
 }
+
 y_vel = grav;
 y = y + y_vel
 
@@ -29,6 +32,7 @@ if (playerCheck != noone){
 		//show_debug_message("hello")
 		if (global.player_lives > 0){
 			//give player i-frames and knock them back a bit
+			audio_play_sound(sfxHurt, 0, false);
 			playerCheck.isInvincible = true;
 			playerCheck.flashActive = true;
 			if (playerCheck.isRight){

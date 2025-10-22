@@ -1,6 +1,6 @@
-if (oControl.game_over){
-	grav = 0;
-}
+if (oControl.game_over) || (oControl.pause) grav = 0;
+else grav = 2;
+
 y_vel = grav;
 y = y + y_vel;
 

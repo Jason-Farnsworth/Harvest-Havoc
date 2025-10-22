@@ -1,8 +1,13 @@
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 
-if (!oControl.game_over) var move = key_right - key_left;
-else move = 0
+
+if keyboard_check_pressed(vk_shift) && (!oControl.game_over){
+	oControl.pause = true;
+}
+
+if (oControl.game_over) || (oControl.pause) var move = 0
+else move = key_right - key_left;
 
 if (hasBoot){
 	horiz_move_speed = (move * walk_speed) * 2;
@@ -40,6 +45,7 @@ if (shrubCheck != noone){
 	else if (!isInvincible){
 		if global.player_lives > 0{
 			//give player i-frames and knock them back a bit
+			audio_play_sound(sfxHurt, 0, false);
 			isInvincible = true;
 			flashActive = true;
 			if (isRight){
@@ -102,6 +108,9 @@ if (canDestroy){
 if (oControl.game_over){
 	sprite_index = sFarmerGameOver;
 	image_speed = 0.2;
+}
+else if (oControl.pause){
+	image_speed = 0;
 }
 else if (horiz_move_speed !=0){
 	if (canDestroy) && (hasBoot){

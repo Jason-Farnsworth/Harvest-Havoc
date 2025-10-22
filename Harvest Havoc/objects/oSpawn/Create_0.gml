@@ -12,6 +12,7 @@ reset_1 = false;
 reset_2 = false;
 reset_3 = false;
 reset_4 = false;
+reset_5 = false;
 
 //Level 1 spawn rates
 spawnTimerCutoff_Food = 100;
@@ -33,3 +34,7 @@ spawnTimerCutoff_Obstacles_4 = 30;
 //Level 5 spawn rates
 spawnTimerCutoff_Food_5 = 25;
 spawnTimerCutoff_Obstacles_5 = 25;
+
+//Level 6 spawn rates
+spawnTimerCutoff_Food_6 = 15;
+spawnTimerCutoff_Obstacles_6 = 15;
