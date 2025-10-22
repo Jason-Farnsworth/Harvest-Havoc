@@ -12,6 +12,8 @@ if (playerCheck != noone){
 	if (playerCheck.canDestroy){
 		if (playerCheck.hasBoot) global.player_score += 8000;
 		else global.player_score += 4000;
+		
+		audio_play_sound(sfxObstacle, 0, false);
 		instance_destroy(self, false);
 	}
 	else if (playerCheck.isInvincible){

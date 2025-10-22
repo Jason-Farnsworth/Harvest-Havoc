@@ -6,12 +6,9 @@ y = y + y_vel;
 
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
-	if (playerCheck.hasBoot){
-		global.player_score += 2000;
-		instance_destroy(self, false);
-	}
-	else{
-		global.player_score += 1000;
-		instance_destroy(self, false);
-	}
+	if (playerCheck.hasBoot) global.player_score += 2000;
+	else global.player_score += 1000;
+	
+	audio_play_sound(sfxFruit, 0, false);
+	instance_destroy(self, false);
 }

@@ -11,7 +11,6 @@ else{
 	horiz_move_speed = move * walk_speed;
 }
 vert_move_speed = vert_move_speed + grav;
-show_debug_message(horiz_move_speed)
 
 
 //Horizontal Geometry Collision

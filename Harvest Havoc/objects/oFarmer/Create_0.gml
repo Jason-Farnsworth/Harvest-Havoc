@@ -1,7 +1,7 @@
 horiz_move_speed = 0;
 vert_move_speed = 0;
 grav = 0.5;
-walk_speed = 3;
+walk_speed = 6;
 //grounded = false;
 //gameOver = false;
 //gameOverTimer = 40;

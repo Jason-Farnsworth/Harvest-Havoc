@@ -15,6 +15,7 @@ if (playerCheck != noone){
 		else global.player_score += 1000;
 		
 		instance_destroy(self, false);
+		audio_play_sound(sfxObstacle, 0, false);
 	}
 	else if (playerCheck.isInvincible){
 	playerCheck.invincibleTimer -= 1;

@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oHelperDetail",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Use the Arrow Keys to move left and right. Collect vegetables to earn points, and avoid the shrubs and \\nrotating obstacles!\\n\\n\\nPower Ups can have mutliple different effects:",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Use the Arrow Keys to move left and right. Collect food to earn points, and avoid the shrubs and \\nrotating obstacles! Pumpkins are worth 1000 points, Pears are worth 2000, and Peppers are worth 4000!\\n\\n\\nPower Ups can have mutliple different effects:",},
   ],
   "parent":{
     "name":"Objects",

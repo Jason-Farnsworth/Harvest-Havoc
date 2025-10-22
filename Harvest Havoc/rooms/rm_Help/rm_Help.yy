@@ -16,10 +16,12 @@
     {"name":"inst_4E452572","path":"rooms/rm_Help/rm_Help.yy",},
     {"name":"inst_194A7882","path":"rooms/rm_Help/rm_Help.yy",},
     {"name":"inst_3615AC93","path":"rooms/rm_Help/rm_Help.yy",},
+    {"name":"inst_7951BEB5","path":"rooms/rm_Help/rm_Help.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_7951BEB5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7951BEB5","objectId":{"name":"oMusicHelp","path":"objects/oMusicHelp/oMusicHelp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
         {"$GMRInstance":"v2","%Name":"inst_3CDCDFF2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CDCDFF2","objectId":{"name":"oHelperReturn","path":"objects/oHelperReturn/oHelperReturn.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.84,"scaleY":0.68,"x":32.0,"y":32.0,},
         {"$GMRInstance":"v2","%Name":"inst_5E6DA7A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E6DA7A3","objectId":{"name":"oHelperDetail","path":"objects/oHelperDetail/oHelperDetail.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.76,"scaleY":1.0,"x":32.0,"y":160.0,},
         {"$GMRInstance":"v2","%Name":"inst_546C0F22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_546C0F22","objectId":{"name":"oHeartHelp","path":"objects/oHeartHelp/oHeartHelp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":320.0,},

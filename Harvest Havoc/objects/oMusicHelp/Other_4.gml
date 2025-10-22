@@ -1,0 +1,1 @@
+audio_play_sound(sHelpMusic, 0, true);

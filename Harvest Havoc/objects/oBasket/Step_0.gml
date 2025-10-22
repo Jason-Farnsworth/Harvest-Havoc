@@ -1,3 +1,6 @@
+if (oControl.game_over){
+	grav = 0;
+}
 y_vel = grav;
 y = y + y_vel;
 
@@ -26,5 +29,6 @@ if (playerCheck != noone){
 	else pumpScore = pumpNumber * 1000
 	global.player_score += pumpScore
 	instance_destroy(oPumpkin, false);
+	audio_play_sound(sfxPoof, 0, false);
 	
 }
