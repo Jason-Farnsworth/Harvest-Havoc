@@ -1,2 +1,4 @@
 y_vel = 0;
-grav = 2;
+grav = global.grav;
+text_timer = 20;
+display_text = false;

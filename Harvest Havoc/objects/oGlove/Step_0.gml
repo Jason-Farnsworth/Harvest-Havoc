@@ -1,5 +1,5 @@
 if (oControl.game_over) || (oControl.pause) grav = 0;
-else grav = 2;
+else grav = global.grav;
 
 y_vel = grav;
 y = y + y_vel;
@@ -9,4 +9,5 @@ if (playerCheck != noone){
 	playerCheck.canDestroy = true;
 	audio_play_sound(sfxPower, 0, false);
 	instance_destroy(self, false);
+	playerCheck.canDestroyTimer = 350;
 }

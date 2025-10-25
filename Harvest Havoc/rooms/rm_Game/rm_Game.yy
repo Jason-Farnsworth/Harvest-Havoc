@@ -76,7 +76,6 @@
     {"name":"iShrub1","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"iShrub2","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_4F42B39C","path":"rooms/rm_Game/rm_Game.yy",},
-    {"name":"inst_570556FF","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_2FB1A7FE","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_BECC363","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_3EAEC6C2","path":"rooms/rm_Game/rm_Game.yy",},
@@ -85,12 +84,14 @@
     {"name":"inst_5BAB0A3","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_6EBA60BF","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_65754C5E","path":"rooms/rm_Game/rm_Game.yy",},
+    {"name":"inst_3A8F5276","path":"rooms/rm_Game/rm_Game.yy",},
+    {"name":"inst_7B7C2C55","path":"rooms/rm_Game/rm_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Info_Screen","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_570556FF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_570556FF","objectId":{"name":"oControl","path":"objects/oControl/oControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
         {"$GMRInstance":"v2","%Name":"inst_33423BDE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33423BDE","objectId":{"name":"oMusicGame","path":"objects/oMusicGame/oMusicGame.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3A8F5276","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3A8F5276","objectId":{"name":"oControl","path":"objects/oControl/oControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
       ],"layers":[],"name":"Info_Screen","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_33BF357D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33BF357D","objectId":{"name":"oDirt","path":"objects/oDirt/oDirt.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":640.0,},
@@ -170,6 +171,7 @@
         {"$GMRInstance":"v2","%Name":"inst_77C9DF1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77C9DF1F","objectId":{"name":"oCloud","path":"objects/oCloud/oCloud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":288.0,},
         {"$GMRInstance":"v2","%Name":"inst_65754C5E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_65754C5E","objectId":{"name":"oCloud","path":"objects/oCloud/oCloud.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":320.0,},
         {"$GMRInstance":"v2","%Name":"inst_7B59B76B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B59B76B","objectId":{"name":"oBigTree","path":"objects/oBigTree/oBigTree.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":128.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7B7C2C55","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B7C2C55","objectId":{"name":"oDelete","path":"objects/oDelete/oDelete.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":22.0,"scaleY":1.0,"x":704.0,"y":736.0,},
       ],"layers":[],"name":"Background_Elem","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Bush_Block","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_2FB1A7FE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FB1A7FE","objectId":{"name":"oDirt3","path":"objects/oDirt3/oDirt3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":576.0,},

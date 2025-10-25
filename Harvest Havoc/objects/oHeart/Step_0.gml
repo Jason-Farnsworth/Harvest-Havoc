@@ -1,5 +1,5 @@
 if (oControl.game_over) || (oControl.pause) grav = 0;
-else grav = 2;
+else grav = global.grav;
 
 y_vel = grav;
 y = y + y_vel;

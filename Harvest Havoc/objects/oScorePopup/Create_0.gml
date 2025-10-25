@@ -1,0 +1,1 @@
+text_to_show = global.score_text

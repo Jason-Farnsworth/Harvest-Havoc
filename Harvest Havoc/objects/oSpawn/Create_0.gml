@@ -4,15 +4,20 @@ spawnTimer = 0;
 //spawnTimer_3 = 50; //spawning powerups will be offset by 50 seconds when compared to food spawn
 food = [oPear, oPepper, oPumpkin];
 obstacles = [oHoneycomb, oSickle, oSquirrel]
-powerups = [oHeart, oHeart, oBoots, oGlove, oBasket, oBoots, oGlove, oBoots, oGlove,]
+powerups = [oHeart, oHeart, oBoots, oGlove, oBasket, oBoots, oGlove, oBoots, oGlove];
+//powerups = [oBasket, oBasket, oBasket];
 list_length_1 = array_length(food)
 list_length_2 = array_length(powerups)
+global.grav = 2;
+global.display_text = false;
+global.text_timer = 30;
 
 reset_1 = false;
 reset_2 = false;
 reset_3 = false;
 reset_4 = false;
 reset_5 = false;
+
 
 //Level 1 spawn rates
 spawnTimerCutoff_Food = 100;

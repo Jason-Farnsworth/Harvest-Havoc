@@ -9,7 +9,7 @@ if (pause){
 	draw_set_color(c_white);
 	draw_set_font(fGameOver);
 	draw_set_halign(fa_center);
-	draw_text(670, 250, "Press Backspace to Resume");
+	draw_text(670, 250, "Press Space to Resume");
 	draw_text(670, 350, "Press Escape to Quit");
 }
 

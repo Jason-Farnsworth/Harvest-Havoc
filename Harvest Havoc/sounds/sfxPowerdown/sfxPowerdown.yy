@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sGameMusic2",
+  "%Name":"sfxPowerdown",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":126.75331,
-  "name":"sGameMusic2",
+  "duration":0.62693876,
+  "name":"sfxPowerdown",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sGameMusic2.mp3",
+  "soundFile":"sfxPowerdown.mp3",
   "type":0,
-  "volume":0.8,
+  "volume":1.0,
 }

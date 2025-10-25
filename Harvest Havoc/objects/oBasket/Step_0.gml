@@ -1,5 +1,5 @@
 if (oControl.game_over) || (oControl.pause) grav = 0;
-else grav = 2;
+else grav = global.grav;
 
 y_vel = grav;
 y = y + y_vel;
@@ -11,6 +11,13 @@ if (playerCheck != noone){
 	
 	//adds to the score the amount of pears destroyed
 	var pearNumber = instance_number(oPear);
+	with (oPear){
+		if (playerCheck.hasBoot) global.score_text = 4000;
+		else global.score_text = 2000;
+		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
+		global.text_timer = 200;
+		global.display_text = true;
+	}
 	if (playerCheck.hasBoot) var pearScore = pearNumber * 4000
 	else pearScore = pearNumber * 2000
 	global.player_score += pearScore
@@ -18,6 +25,13 @@ if (playerCheck != noone){
 	
 	//adds to the score the amount of peppers destroyed
 	var pepperNumber = instance_number(oPepper);
+	with (oPepper){
+		if (playerCheck.hasBoot) global.score_text = 8000;
+		else global.score_text = 4000;
+		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
+		global.text_timer = 200;
+		global.display_text = true;
+	}
 	if (playerCheck.hasBoot) var pepperScore = pepperNumber * 8000
 	else pepperScore = pepperNumber * 4000
 	global.player_score += pepperScore
@@ -25,6 +39,13 @@ if (playerCheck != noone){
 	
 	//adds to the score the amount of pumpkins destroyed
 	var pumpNumber = instance_number(oPumpkin);
+	with (oPumpkin){
+		if (playerCheck.hasBoot) global.score_text = 2000;
+		else global.score_text = 1000;
+		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
+		global.text_timer = 200;
+		global.display_text = true;
+	}
 	if (playerCheck.hasBoot) var pumpScore = pumpNumber * 2000
 	else pumpScore = pumpNumber * 1000
 	global.player_score += pumpScore

@@ -1,23 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oHelperDetail",
+  "%Name":"oScorePopup",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHelperDetail",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Use the Arrow Keys to move left and right. Press Shift to pause the game. \\nCollect food to earn points, and avoid the shrubs and rotating obstacles! \\nPumpkins are worth 1000 points, Pears are worth 2000, and Peppers are worth 4000!\\nThe higher your score, the harder the game becomes!\\n\\n\\nPower Ups can have mutliple different effects:",},
-  ],
+  "name":"oScorePopup",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"oHelperParent",
-    "path":"objects/oHelperParent/oHelperParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHelper",
-    "path":"sprites/sHelper/sHelper.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

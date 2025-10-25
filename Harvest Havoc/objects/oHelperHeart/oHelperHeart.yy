@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oHelperHeart",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Restores a life. Can only have a max of 3 lives.",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Restores a life.",},
   ],
   "parent":{
     "name":"Objects",

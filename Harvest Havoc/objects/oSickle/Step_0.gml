@@ -4,7 +4,7 @@ if (oControl.game_over) || (oControl.pause){
 }
 else {	
 	image_angle -= 2;
-	grav = 2;
+	grav = global.grav;
 }
 
 y_vel = grav;
@@ -13,11 +13,20 @@ y = y + y_vel;
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
 	if (playerCheck.canDestroy){
-		if (playerCheck.hasBoot) global.player_score += 8000;
-		else global.player_score += 4000;
+		if (playerCheck.hasBoot) {
+			global.player_score += 8000;
+			global.display_text = 8000;
+		}
+		else {
+			global.player_score += 4000;
+			global.display_text = 4000;
+		}
 		
 		audio_play_sound(sfxObstacle, 0, false);
 		instance_destroy(self, false);
+		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
+		global.text_timer = 30;
+		global.display_text = true;
 	}
 	else if (playerCheck.isInvincible){
 	}
