@@ -133,10 +133,7 @@
   "sdfSpread":8,
   "size":60.0,
   "styleName":"Rust",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":false,
 }

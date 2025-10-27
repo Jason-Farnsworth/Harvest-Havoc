@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sSmallTree",
-    "path":"sprites/sSmallTree/sSmallTree.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

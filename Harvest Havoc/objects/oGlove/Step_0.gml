@@ -9,5 +9,6 @@ if (playerCheck != noone){
 	playerCheck.canDestroy = true;
 	audio_play_sound(sfxPower, 0, false);
 	instance_destroy(self, false);
-	playerCheck.canDestroyTimer = 350;
+	//playerCheck.canDestroyTimer = 400;
+	if (global.GloveHelp) instance_create_layer(680, 250, "GloveTutorial", oGloveTutorial);
 }

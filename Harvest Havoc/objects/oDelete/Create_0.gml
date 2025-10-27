@@ -1,1 +1,1 @@
-obj_list = [oBasket, oBoots, oGlove, oHeart, oHoneycomb, oPear, oPepper, oPumpkin, oSquirrel, oSickle]
+obj_list = [oBasket, oBoots, oGlove, oHeart, oWasp, oPear, oPepper, oPumpkin, oSquirrel, oSickle]

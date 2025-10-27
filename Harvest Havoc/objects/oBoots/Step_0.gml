@@ -9,5 +9,5 @@ if (playerCheck != noone){
 	playerCheck.hasBoot = true;
 	audio_play_sound(sfxPower, 0, false);
 	instance_destroy(self, false);
-	playerCheck.hasBootTimer = 350;
+	//playerCheck.hasBootTimer = 400;
 }

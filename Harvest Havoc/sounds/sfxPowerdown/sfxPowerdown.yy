@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.62693876,
+  "duration":0.40535146,
   "name":"sfxPowerdown",
   "parent":{
     "name":"Sounds",

@@ -15,11 +15,11 @@ if (playerCheck != noone){
 	if (playerCheck.canDestroy){
 		if (playerCheck.hasBoot) {
 			global.player_score += 8000;
-			global.display_text = 8000;
+			global.score_text = 8000;
 		}
 		else {
 			global.player_score += 4000;
-			global.display_text = 4000;
+			global.score_text = 4000;
 		}
 		
 		audio_play_sound(sfxObstacle, 0, false);

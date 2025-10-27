@@ -1,0 +1,1 @@
+glove_text_timer = 350
