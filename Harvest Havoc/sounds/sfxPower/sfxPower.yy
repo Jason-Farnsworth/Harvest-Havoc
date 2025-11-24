@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.68750566,
+  "duration":0.68265307,
   "name":"sfxPower",
   "parent":{
     "name":"Sounds",

@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"fGameOver","path":"fonts/fGameOver/fGameOver.yy",},},
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},},
+    {"id":{"name":"fPowerupTimer","path":"fonts/fPowerupTimer/fPowerupTimer.yy",},},
     {"id":{"name":"fScore","path":"fonts/fScore/fScore.yy",},},
     {"id":{"name":"fScorePopup","path":"fonts/fScorePopup/fScorePopup.yy",},},
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},},

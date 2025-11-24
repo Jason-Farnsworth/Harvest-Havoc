@@ -1,8 +1,8 @@
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 
 
-if keyboard_check_pressed(vk_shift) && (!oControl.game_over){
+if (keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("P"))) && (!oControl.game_over){
 	oControl.pause = true;
 }
 
@@ -91,6 +91,7 @@ if (invincibleTimer == 40){
 
 //Power Up Timers
 if (hasBoot){
+	//show_debug_message("this should be true")
 	if (!oControl.pause){
 		hasBootTimer -= 1;
 		if (hasBootTimer == 10){
@@ -107,6 +108,7 @@ if (hasBoot){
 	if (oControl.game_over){
 		hasBoot = false;
 	}
+	
 }
 
 if (canDestroy){
@@ -125,6 +127,7 @@ if (canDestroy){
 	if (oControl.game_over){
 		canDestroy = false;
 	}
+	
 }
 
 

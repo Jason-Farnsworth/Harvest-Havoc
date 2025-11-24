@@ -5,14 +5,20 @@ if (pause){
 	}
 	//instance_deactivate_all(true);
 	
-	if keyboard_check_pressed(vk_space){
+	if keyboard_check_pressed(ord("R")){
 		instance_destroy(oDarken, false);
 		//instance_activate_all();
 		pause = false;
 		screen_create = false;
 	}
-	else if keyboard_check_pressed(vk_escape){
-		game_end();
+	else if keyboard_check_pressed(ord("E")){
+		global.player_high_score = 0;
+	}
+	else if keyboard_check_pressed(ord("M")){
+		room_goto(rm_Menu);
+		ini_open("savedata.ini");
+		ini_write_real("save1", "High Score", global.player_high_score);
+		ini_close();
 	}
 }
 else if (game_over){
@@ -22,11 +28,15 @@ else if (game_over){
 		instance_create_layer(x, y, "Info_Screen", oDarken);
 		screen_create = true;
 	}
-	
-	if keyboard_check(vk_space){
-		if (global.player_score > global.player_high_score){
+	if (global.player_score > global.player_high_score){
 		global.player_high_score = global.player_score
-		}
+		ini_open("savedata.ini");
+		ini_write_real("save1", "High Score", global.player_high_score);
+		//score2 = ini_read_real("save1", "Score", 0 );
+		ini_close();
+	}
+	
+	if keyboard_check(ord("R")){
 		global.player_lives = 3;
 		global.player_score = 0;
 		for (var i=0; i<array_length(objects); i+=1){

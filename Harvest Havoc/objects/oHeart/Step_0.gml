@@ -4,6 +4,11 @@ else grav = global.grav;
 y_vel = grav;
 y = y + y_vel;
 
+var objCheck = instance_place(x, y, objects)
+if (objCheck != noone){
+	instance_destroy(objCheck, false);
+}
+
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
 	if (global.player_lives < 3) global.player_lives += 1;

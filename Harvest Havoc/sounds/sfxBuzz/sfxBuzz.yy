@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.090635,
+  "duration":1.0666667,
   "name":"sfxBuzz",
   "parent":{
     "name":"Sounds",
