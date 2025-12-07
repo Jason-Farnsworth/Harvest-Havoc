@@ -1,10 +1,11 @@
-y_coord = -50;
+y_coord = -30;
 spawnTimer = 0;
 //spawnTimer_2 = 30; //spawning obstacles will be offset by 30 seconds when compared to food spawn
 //spawnTimer_3 = 50; //spawning powerups will be offset by 50 seconds when compared to food spawn
 food = [oPear, oPepper, oPumpkin];
 obstacles = [oWasp, oSickle, oSquirrel]
 powerups = [oHeart, oHeart, oBoots, oGlove, oBasket, oBoots, oGlove, oBoots, oGlove];
+powerups2 = [oHeart, oHeart, oHeart, oGlove, oBasket, oBasket, oBoots, oGlove, oBoots, oGlove, oGlove];
 //powerups = [oGlove, oGlove, oGlove];
 list_length_1 = array_length(food)
 list_length_2 = array_length(powerups)

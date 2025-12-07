@@ -38,7 +38,15 @@ else if (game_over){
 	
 	if keyboard_check(ord("R")){
 		global.player_lives = 3;
-		global.player_score = 0;
+		if (global.player_score >= 50000){
+			global.player_score = 50000;
+		}
+		else{
+			global.player_score = 0;
+			global.player_level = "Level 1"
+			global.grav = 2;
+		}
+		global.player_score = 50000;
 		for (var i=0; i<array_length(objects); i+=1){
 			instance_destroy(objects[i], false);
 		}
@@ -48,11 +56,12 @@ else if (game_over){
 		game_over = false;
 		oFarmer.hasBoot = false;
 		oFarmer.canDestroy = false;
-		global.player_level = "Level 1"
-		global.grav = 2;
+		oFarmer.hasBootTimer = 400;
+		oFarmer.canDestroyTimer = 400;
 		oFarmer.flashActive = false;
 		oFarmer.flashAlpha = 0;
 		screen_create = false;
+		global.GloveHelp = false;
 		
 	}
 	else if keyboard_check(vk_escape){

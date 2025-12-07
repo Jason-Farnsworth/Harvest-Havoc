@@ -115,7 +115,7 @@ if (!oControl.game_over){
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
-				instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
+				instance_create_layer(x_coord, y_coord, "Powers", powerups2[randObjectIndex]);
 			}
 			spawnTimer += 1;
 			reset_4 = true;
@@ -142,7 +142,7 @@ if (!oControl.game_over){
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
-				instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
+				instance_create_layer(x_coord, y_coord, "Powers", powerups2[randObjectIndex]);
 			}
 			spawnTimer += 1;
 			reset_5 = true;
@@ -170,7 +170,7 @@ if (!oControl.game_over){
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
-				instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
+				instance_create_layer(x_coord, y_coord, "Powers", powerups2[randObjectIndex]);
 			}
 			spawnTimer += 1;
 			reset_6 = true;
@@ -198,7 +198,7 @@ if (!oControl.game_over){
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
-				instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
+				instance_create_layer(x_coord, y_coord, "Powers", powerups2[randObjectIndex]);
 			}
 			spawnTimer += 1;
 			reset_7 = true;
