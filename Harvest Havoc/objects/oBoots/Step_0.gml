@@ -1,4 +1,4 @@
-if (oControl.game_over) || (oControl.pause) grav = 0;
+if (oControl.game_over) || (oControl.pause) ||(oControl.timer_win) grav = 0;
 else grav = global.grav;
 
 y_vel = grav;

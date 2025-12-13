@@ -6,7 +6,7 @@ if (keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("P"))) && (!o
 	oControl.pause = true;
 }
 
-if (oControl.game_over) || (oControl.pause) var move = 0
+if (oControl.game_over) || (oControl.pause) || (oControl.timer_win) var move = 0
 else move = key_right - key_left;
 
 if (hasBoot){
@@ -105,7 +105,7 @@ if (hasBoot){
 			
 		}
 	}
-	if (oControl.game_over){
+	if (oControl.game_over || oControl.timer_win){
 		hasBoot = false;
 	}
 	
@@ -124,7 +124,7 @@ if (canDestroy){
 			canDestroyTimer = 400;
 		}
 	}
-	if (oControl.game_over){
+	if (oControl.game_over || oControl.timer_win){
 		canDestroy = false;
 	}
 	

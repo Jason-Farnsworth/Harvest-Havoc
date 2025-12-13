@@ -6,8 +6,8 @@
   "name":"oCloud",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Normal Mode",
+    "path":"folders/Objects/Normal Mode.yy",
   },
   "parentObjectId":null,
   "persistent":false,

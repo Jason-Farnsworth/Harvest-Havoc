@@ -1,4 +1,4 @@
-if (oControl.game_over) || (oControl.pause){
+if (oControl.game_over) || (oControl.pause) || (oControl.timer_win){
 	grav = 0;
 	image_angle = image_angle;
 }

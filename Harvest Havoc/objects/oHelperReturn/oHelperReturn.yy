@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTitleBasket",
-    "path":"sprites/sTitleBasket/sTitleBasket.yy",
+    "name":"sBackArrow",
+    "path":"sprites/sBackArrow/sBackArrow.yy",
   },
   "spriteMaskId":null,
   "visible":true,
