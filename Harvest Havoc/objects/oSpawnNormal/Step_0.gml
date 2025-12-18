@@ -111,7 +111,7 @@ if (!oControl.game_over){
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
-				while (global.player_lives == 3) && (randObjectIndex < 2)
+				while (global.player_lives == 3) && (randObjectIndex < 3)
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
@@ -138,7 +138,7 @@ if (!oControl.game_over){
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
-				while (global.player_lives == 3) && (randObjectIndex < 2)
+				while (global.player_lives == 3) && (randObjectIndex < 3)
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
@@ -166,7 +166,7 @@ if (!oControl.game_over){
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
-				while (global.player_lives == 3) && (randObjectIndex < 2)
+				while (global.player_lives == 3) && (randObjectIndex < 3)
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}
@@ -194,7 +194,7 @@ if (!oControl.game_over){
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
-				while (global.player_lives == 3) && (randObjectIndex < 2)
+				while (global.player_lives == 3) && (randObjectIndex < 3)
 				{
 					randObjectIndex = irandom(list_length_2 - 1);
 				}

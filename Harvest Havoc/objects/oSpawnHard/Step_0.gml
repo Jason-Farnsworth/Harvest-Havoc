@@ -27,7 +27,7 @@ if (!oControl.game_over){
 			if (!reset_1) spawnTimer = 0;
 			global.hardNextScore = 100000 - global.player_score;
 			global.player_level = "Level 2";
-			global.grav = 4;
+			global.grav = 5;
 			if (spawnTimer % spawnTimerCutoff_Food_2 == 0){
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
@@ -80,7 +80,7 @@ if (!oControl.game_over){
 			global.hardNextScore = 300000 - global.player_score;
 			if (!reset_3) spawnTimer = 0;
 			global.player_level = "Level 4";
-			global.grav = 5;
+			global.grav = 6;
 			if (spawnTimer % spawnTimerCutoff_Food_4 == 0){
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
@@ -133,7 +133,7 @@ if (!oControl.game_over){
 			global.hardNextScore = 750000 - global.player_score;
 			if (!reset_5) spawnTimer = 0;
 			global.player_level = "Level 6";
-			global.grav = 6;
+			global.grav = 7;
 			if (spawnTimer % spawnTimerCutoff_Food_6 == 0){
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
@@ -160,7 +160,7 @@ if (!oControl.game_over){
 			global.hardNextScore = 1000000 - global.player_score;
 			if (!reset_6) spawnTimer = 0;
 			global.player_level = 7;
-			global.grav = 7;
+			global.grav = 8;
 			global.player_level = "Level 7";
 			if (spawnTimer % spawnTimerCutoff_Food_7 == 0){
 				var x_coord = random_range(200, 1200)

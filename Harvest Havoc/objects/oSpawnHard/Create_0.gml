@@ -10,7 +10,7 @@ powerups2 = [oHeart, oGlove, oBasket, oBasket, oBoots, oGlove, oBoots, oGlove, o
 list_length_1 = array_length(food);
 list_length_2 = array_length(powerups);
 list_length_3 = array_length(powerups2);
-global.grav = 3;
+global.grav = 4;
 global.display_text = false;
 global.text_timer = 30;
 global.GloveHelp = false;
@@ -26,17 +26,17 @@ reset_7 = false;
 
 
 //Level 1 spawn rates
-spawnTimerCutoff_Food = 80;
-spawnTimerCutoff_Obstacles = 70;
+spawnTimerCutoff_Food = 60;
+spawnTimerCutoff_Obstacles = 60;
 spawnTimerCutoff_Power = 500;
 
 //Level 2 spawn rates
-spawnTimerCutoff_Food_2 = 60;
-spawnTimerCutoff_Obstacles_2 = 50;
+spawnTimerCutoff_Food_2 = 45;
+spawnTimerCutoff_Obstacles_2 = 45;
 
 
 //Level 3 spawn rates
-spawnTimerCutoff_Food_3 = 45;
+spawnTimerCutoff_Food_3 = 35;
 spawnTimerCutoff_Obstacles_3 = 35;
 
 //Level 4 spawn rates

@@ -15,9 +15,9 @@ if (global.gameMode == "normal" or global.gameMode == "hard"){
 }
 if (global.gameMode == "time"){
 	draw_text(520, 660, "Current Score: " + string(global.player_score));
-	draw_text(870, 660, "Points Left: " + string(global.timer_score - global.player_score));
-	draw_text(520, 720, "Time: " + global.timer);
-	draw_text(870, 720, "Best Time: " + global.time_player_high_score);
+	draw_text(870, 660, "High Score: " + string(global.time_player_high_score));
+	draw_text(700, 720, "Time: " + global.timer);
+	//draw_text(870, 720, "Best Time: " + global.time_player_high_score);
 }
 
 
@@ -62,10 +62,10 @@ if (timer_win){
 	draw_set_color(c_white);
 	draw_set_font(fGameOver);
 	draw_set_halign(fa_center);
-	draw_text(670, 200, "BEST TIME: " + global.timer);
-	draw_text(670, 300, "Press R to Restart");
-	draw_text(670, 400, "Press D to change Game Mode");
-	draw_text(670, 500, "Press M to return to Main Menu");
+	//draw_text(670, 200, "BEST TIME: " + global.timer);
+	draw_text(670, 250, "Press R to Restart");
+	draw_text(670, 350, "Press D to change Game Mode");
+	draw_text(670, 450, "Press M to return to Main Menu");
 }
 draw_set_color(c_white);
 draw_set_font(fScore);

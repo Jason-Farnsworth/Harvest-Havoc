@@ -1,6 +1,6 @@
 if position_meeting(mouse_x, mouse_y, self)
 {
-   oModeDetail.modeDesc = "Achieve 1,000,000 points as fast as possible!";
+   oModeDetail.modeDesc = "Achieve as many points as you can in 2 minutes!\nDying does't record your score!";
    //show_debug_message("time");
 }
 /*

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sFarmerGameOver",
   "bboxMode":2,
   "bbox_bottom":48,
@@ -12,13 +12,13 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"acbdf103-4ede-4103-b00e-2f7c42311387","name":"acbdf103-4ede-4103-b00e-2f7c42311387","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e39d2642-cccf-429d-909e-3b49150113ba","name":"e39d2642-cccf-429d-909e-3b49150113ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"18909af9-bee2-4e6f-a91f-75dc46071d57","name":"18909af9-bee2-4e6f-a91f-75dc46071d57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"91b85c98-26db-4e91-971e-5e0b04788dee","name":"91b85c98-26db-4e91-971e-5e0b04788dee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"acbdf103-4ede-4103-b00e-2f7c42311387","name":"acbdf103-4ede-4103-b00e-2f7c42311387","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e39d2642-cccf-429d-909e-3b49150113ba","name":"e39d2642-cccf-429d-909e-3b49150113ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"18909af9-bee2-4e6f-a91f-75dc46071d57","name":"18909af9-bee2-4e6f-a91f-75dc46071d57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"91b85c98-26db-4e91-971e-5e0b04788dee","name":"91b85c98-26db-4e91-971e-5e0b04788dee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -76,27 +76,13 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"acbdf103-4ede-4103-b00e-2f7c42311387","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"caf349e7-c613-44a2-98a5-de0cb0d67668","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1299a336-f8c1-4cce-8a34-7c6b9a909b62","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e39d2642-cccf-429d-909e-3b49150113ba","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d76e5993-cd35-4cf5-a8ee-c0444c53b5aa","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e25f1ca6-8318-4532-a9d8-e2b6422568a7","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"18909af9-bee2-4e6f-a91f-75dc46071d57","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5d02d1b7-6959-44d1-bbe6-00ab9c393468","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91b85c98-26db-4e91-971e-5e0b04788dee","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"45795660-e684-44c4-bb03-9e790be6500a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"81e1bff4-1e0b-4d9d-b22c-ea68dd2a0463","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"acbdf103-4ede-4103-b00e-2f7c42311387","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"caf349e7-c613-44a2-98a5-de0cb0d67668","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"44ce988c-47f1-4231-aff7-cc78fe0e0937","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1299a336-f8c1-4cce-8a34-7c6b9a909b62","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e39d2642-cccf-429d-909e-3b49150113ba","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d76e5993-cd35-4cf5-a8ee-c0444c53b5aa","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d676d4d-61d8-4f08-bab3-134899e2a2f1","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e25f1ca6-8318-4532-a9d8-e2b6422568a7","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"18909af9-bee2-4e6f-a91f-75dc46071d57","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5d02d1b7-6959-44d1-bbe6-00ab9c393468","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"91b85c98-26db-4e91-971e-5e0b04788dee","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"45795660-e684-44c4-bb03-9e790be6500a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e936e99-51bb-49bb-9a55-89da4b0b165f","path":"sprites/sFarmerGameOver/sFarmerGameOver.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"81e1bff4-1e0b-4d9d-b22c-ea68dd2a0463","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

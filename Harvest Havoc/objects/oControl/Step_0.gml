@@ -17,14 +17,14 @@ if (pause){
 		if (global.gameMode == "normal"){
 			global.normal_player_high_score = 0;
 		}
-		if (global.gameMode == "hard"){
-			global.hard_player_high_score = 0;
+		if (global.gameMode == "hard"){			global.hard_player_high_score = 0;
 		}
 		if (global.gameMode == "time"){
-			global.min_player_high_score = 0; //Why is this becoming undefined?
+			/*global.min_player_high_score = 0; //Why is this becoming undefined?
 			global.sec_player_high_score = 0;
 			global.mil_player_high_score = 0;
-			global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
+			global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);*/
+			global.time_player_high_score = 0;
 		}
 	}
 	else if keyboard_check_pressed(ord("M")){
@@ -38,9 +38,10 @@ if (pause){
 			ini_write_real("save2", "Hard High Score", global.hard_player_high_score);
 		}
 		if (global.gameMode == "time"){
-			ini_write_real("save3", "Best Min Time", global.min_player_high_score);
+			/*ini_write_real("save3", "Best Min Time", global.min_player_high_score);
 			ini_write_real("save4", "Best Sec Time", global.sec_player_high_score);
-			ini_write_real("save5", "Best Mil Time", global.mil_player_high_score);
+			ini_write_real("save5", "Best Mil Time", global.mil_player_high_score);*/
+			ini_write_real("save3", "Time High Score", global.time_player_high_score);
 		}
 		ini_close();
 		
@@ -130,7 +131,7 @@ else if (game_over){
 			global.grav = 3;
 			global.player_lives = 3;
 			oSpawnTime.alarm[0] = 6;
-			global.timer_min = 0;
+			global.timer_min = 2;
 			global.timer_sec = 0;
 			global.timer_mil = 0;
 		}
@@ -164,30 +165,30 @@ else if (game_over){
 	
 }
 
-else if (global.gameMode == "time" and global.player_score >= global.timer_score){
-	timer_win = true;
+else if (global.gameMode == "time" and global.timer_end = true){ //This must be a separate check for when the player survives the timer
+	timer_win = true; //Is necessary so other t6hings pause when timer is 0
 	
 	if (screen_create == false){
 		instance_create_layer(x, y, "Info_Screen", oDarken);
 		screen_create = true;
 	}
 	
-	if (!timer_settings){
+	/*if (!timer_settings){
 	//Stuff like this only needs to happen once. How do I have it only trigger once (when timer_win is initially hit)?
 		oSpawnTime.alarm[0] = -1;
-		var curr_time_in_num = global.timer_min * 100 + global.timer_sec * 10 + global.timer_mil;
+		//var curr_time_in_num = global.timer_min * 100 + global.timer_sec * 10 + global.timer_mil;
 		//show_debug_message(global.min_player_high_score)
 		//show_debug_message(global.sec_player_high_score)
 		//show_debug_message(global.mil_player_high_score)
-		var best_time_in_num = global.min_player_high_score * 100+ global.sec_player_high_score * 10 + global.mil_player_high_score;
+		//var best_time_in_num = global.min_player_high_score * 100+ global.sec_player_high_score * 10 + global.mil_player_high_score;
 	
 		//show_debug_message("added cur " + curr_time_in_num)
-		if (global.sec_player_high_score > 10) global.time_player_high_score = string(global.min_player_high_score) + ":" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
-		else global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
+		//if (global.sec_player_high_score > 10) global.time_player_high_score = string(global.min_player_high_score) + ":" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
+		//else global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
 	
-		show_debug_message("time high score " + global.time_player_high_score);
-		show_debug_message(best_time_in_num);
-		show_debug_message(curr_time_in_num)
+		//show_debug_message("time high score " + global.time_player_high_score);
+		//show_debug_message(best_time_in_num);
+		//show_debug_message(curr_time_in_num)
 		if (best_time_in_num == 0){
 			ini_open("savedata.ini");
 			//global.time_player_high_score = global.timer;
@@ -203,7 +204,7 @@ else if (global.gameMode == "time" and global.player_score >= global.timer_score
 			ini_close();
 			
 		}
-		else if (curr_time_in_num < best_time_in_num){
+		if (curr_time_in_num < best_time_in_num){
 			show_debug_message("this should work")
 			ini_open("savedata.ini");
 			if (global.sec_player_high_score > 10) global.time_player_high_score = string(global.min_player_high_score) + ":" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
@@ -220,6 +221,13 @@ else if (global.gameMode == "time" and global.player_score >= global.timer_score
 		}
 		
 		timer_settings = true;
+	}*/
+	if (global.player_score > global.time_player_high_score){
+		ini_open("savedata.ini");
+		global.time_player_high_score = global.player_score
+		ini_write_real("save3", "Time High Score", global.time_player_high_score);
+		ini_close();
+
 	}
 	
 	if keyboard_check(ord("R")){
@@ -244,9 +252,10 @@ else if (global.gameMode == "time" and global.player_score >= global.timer_score
 		global.GloveHelp = false;
 		global.showNewModeMessage = false;
 		timer_win = false;
+		global.timer_end = false;
 		global.timer_mil = 0;
 		global.timer_sec = 0;
-		global.timer_min = 0;
+		global.timer_min = 2;
 		oSpawnTime.alarm[0] = 6;
 		timer_settings = false;
 		
