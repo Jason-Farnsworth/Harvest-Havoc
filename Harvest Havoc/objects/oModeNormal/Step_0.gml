@@ -5,5 +5,5 @@ if position_meeting(mouse_x, mouse_y, self)
 }
 /*else
 {
-   global.modeDesc = "";
+   oModeDetail.modeDesc = "";
 }*/

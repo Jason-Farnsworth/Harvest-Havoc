@@ -38,14 +38,14 @@ y = y + vert_move_speed;
 
 
 //Obstacle Detection
-var shrubCheck = instance_place(x, y, oFence)
+var shrubCheck = instance_place(x, y, fences)
 if (shrubCheck != noone){
 	if (isInvincible){
 	}
 	else if (!isInvincible){
 		if global.player_lives > 0{
 			//give player i-frames and knock them back a bit
-			audio_play_sound(sfxBuzz, 0, false);
+			if global.sfxControl audio_play_sound(sfxBuzz, 0, false);
 			isInvincible = true;
 			flashActive = true;
 			if (isRight){
@@ -95,7 +95,7 @@ if (hasBoot){
 	if (!oControl.pause){
 		hasBootTimer -= 1;
 		if (hasBootTimer == 10){
-			audio_play_sound(sfxPowerdown, 0, false);
+			if global.sfxControl audio_play_sound(sfxPowerdown, 0, false);
 		}
 		//show_debug_message("boot is active");
 		if (hasBootTimer == 0){
@@ -115,7 +115,7 @@ if (canDestroy){
 	if (!oControl.pause){
 		canDestroyTimer -=1;
 		if (canDestroyTimer == 10){
-			audio_play_sound(sfxPowerdown, 0, false);
+			if global.sfxControl audio_play_sound(sfxPowerdown, 0, false);
 		}
 		//show_debug_message("glove is active");
 		if (canDestroyTimer == 0){

@@ -1,1 +1,1 @@
-audio_stop_sound(sTitleMusic);
+//audio_stop_sound(sTitleMusic);

@@ -1,1 +1,1 @@
-audio_stop_sound(gameMusic);
+//audio_stop_sound(gameMusic);

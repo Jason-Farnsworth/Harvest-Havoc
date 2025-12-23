@@ -6,8 +6,8 @@
   "name":"oGloveHelp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Help Menu",
+    "path":"folders/Objects/Help Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

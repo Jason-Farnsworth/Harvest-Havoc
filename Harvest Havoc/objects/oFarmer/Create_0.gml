@@ -6,6 +6,7 @@ walk_speed = 6;
 //gameOver = false;
 //gameOverTimer = 40;
 terrain = [oDirt, oDirt3, oDirtWinter]
+fences = [oFence, oFenceWinter]
 isRight = true;
 isInvincible = false;
 invincibleTimer = 30;

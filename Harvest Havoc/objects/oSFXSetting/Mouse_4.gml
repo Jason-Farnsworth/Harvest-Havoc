@@ -1,0 +1,1 @@
+global.sfxControl = !global.sfxControl

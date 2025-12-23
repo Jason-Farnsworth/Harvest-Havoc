@@ -4,6 +4,7 @@ if (pause){
 		screen_create = true;
 	}
 	if (global.gameMode == "time") oSpawnTime.alarm[0] = -1;
+	if (global.gameMode == "survival") oSpawnSurvival.alarm[0] = -1;
 	//instance_deactivate_all(true);
 	
 	if keyboard_check_pressed(ord("R")){
@@ -12,12 +13,14 @@ if (pause){
 		pause = false;
 		screen_create = false;
 		if (global.gameMode == "time") oSpawnTime.alarm[0] = 6;
+		if (global.gameMode == "survival") oSpawnSurvival.alarm[0] = 30;
 	}
 	else if keyboard_check_pressed(ord("E")){
 		if (global.gameMode == "normal"){
 			global.normal_player_high_score = 0;
 		}
-		if (global.gameMode == "hard"){			global.hard_player_high_score = 0;
+		if (global.gameMode == "hard"){			
+			global.hard_player_high_score = 0;
 		}
 		if (global.gameMode == "time"){
 			/*global.min_player_high_score = 0; //Why is this becoming undefined?
@@ -25,6 +28,9 @@ if (pause){
 			global.mil_player_high_score = 0;
 			global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);*/
 			global.time_player_high_score = 0;
+		}
+		if (global.gameMode == "survival"){
+			global.survival_player_high_score = 0;
 		}
 	}
 	else if keyboard_check_pressed(ord("M")){
@@ -42,6 +48,9 @@ if (pause){
 			ini_write_real("save4", "Best Sec Time", global.sec_player_high_score);
 			ini_write_real("save5", "Best Mil Time", global.mil_player_high_score);*/
 			ini_write_real("save3", "Time High Score", global.time_player_high_score);
+		}
+		if (global.gameMode == "survival"){
+			ini_write_real("save4", "Survival High Score", global.survival_player_high_score);
 		}
 		ini_close();
 		
@@ -72,10 +81,17 @@ else if (game_over){
 			ini_write_real("save1", "High Score", global.normal_player_high_score);
 			}
 		}
-	if (global.gameMode == "hard"){
+	else if (global.gameMode == "hard"){
 		if (global.player_score > global.hard_player_high_score){
 			global.hard_player_high_score = global.player_score
 			ini_write_real("save2", "Hard High Score", global.hard_player_high_score);
+		}
+	}
+	else if (global.gameMode == "survival"){
+		oSpawnSurvival.alarm[0] = -1;
+		if (global.player_score > global.survival_player_high_score){
+			global.survival_player_high_score = global.player_score
+			ini_write_real("save4", "Survival High Score", global.survival_player_high_score);
 		}
 	}
 	/*var curr_time_in_num = global.timer_mil + global.timer_sec + global.timer_min;
@@ -108,7 +124,7 @@ else if (game_over){
 		ini_close();
 	}
 	
-	if keyboard_check(ord("R")){
+	if keyboard_check_pressed(ord("R")){
 		/*if (global.player_score >= 50000){
 			global.player_score = 50000;
 		}
@@ -134,6 +150,11 @@ else if (game_over){
 			global.timer_min = 2;
 			global.timer_sec = 0;
 			global.timer_mil = 0;
+		}
+		if (global.gameMode == "survival"){
+			global.grav = 4;
+			global.player_lives = 3;
+			oSpawnSurvival.alarm[0] = 30;
 		}
 		//global.player_score = 50000;
 		for (var i=0; i<array_length(objects); i+=1){
@@ -162,11 +183,14 @@ else if (game_over){
 		global.showNewModeMessage = false;
 		room_goto(rm_ModeMenu);
 	}
-	
 }
 
 else if (global.gameMode == "time" and global.timer_end = true){ //This must be a separate check for when the player survives the timer
+	if (timer_win = false) {
+	if global.sfxControl audio_play_sound(sfxFruit, 0, false);
+	}
 	timer_win = true; //Is necessary so other t6hings pause when timer is 0
+	
 	
 	if (screen_create == false){
 		instance_create_layer(x, y, "Info_Screen", oDarken);

@@ -10,8 +10,8 @@
   "name":"oModeNormal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Mode Select",
+    "path":"folders/Objects/Mode Select.yy",
   },
   "parentObjectId":{
     "name":"oModeParent",

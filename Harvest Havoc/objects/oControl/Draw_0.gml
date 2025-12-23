@@ -1,7 +1,7 @@
 draw_set_color(c_white);
 draw_set_font(fScore);
 draw_set_halign(fa_center);
-if (global.gameMode == "normal" or global.gameMode == "hard"){
+if (global.gameMode == "normal" or global.gameMode == "hard" or global.gameMode == "survival"){
 	draw_text(580, 660, "Score: " + string(global.player_score));
 	draw_text(580, 720, string(global.player_level));
 	if (global.gameMode == "normal"){
@@ -11,6 +11,10 @@ if (global.gameMode == "normal" or global.gameMode == "hard"){
 	if (global.gameMode == "hard"){
 		draw_text(820, 660, "High Score: " + string(global.hard_player_high_score));
 		draw_text(820, 720, "Next Level: " + string(global.hardNextScore));
+	}
+	if (global.gameMode == "survival"){
+		draw_text(820, 660, "High Score: " + string(global.survival_player_high_score));
+		draw_text(820, 720, "Next Level: " + string(global.survivalNextScore));
 	}
 }
 if (global.gameMode == "time"){
@@ -62,10 +66,10 @@ if (timer_win){
 	draw_set_color(c_white);
 	draw_set_font(fGameOver);
 	draw_set_halign(fa_center);
-	//draw_text(670, 200, "BEST TIME: " + global.timer);
-	draw_text(670, 250, "Press R to Restart");
-	draw_text(670, 350, "Press D to change Game Mode");
-	draw_text(670, 450, "Press M to return to Main Menu");
+	draw_text(670, 200, "TIME'S UP!");
+	draw_text(670, 300, "Press R to Restart");
+	draw_text(670, 400, "Press D to change Game Mode");
+	draw_text(670, 500, "Press M to return to Main Menu");
 }
 draw_set_color(c_white);
 draw_set_font(fScore);

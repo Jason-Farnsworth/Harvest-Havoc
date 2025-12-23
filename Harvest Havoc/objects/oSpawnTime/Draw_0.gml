@@ -1,7 +1,7 @@
-var pos_x = 1210
+var pos_x = 1340
 repeat (global.player_lives){
 	draw_sprite_ext(sHeart_Icon, 0, pos_x, 50, 2, 2, 0, c_white, 1);
-	pos_x = pos_x + 65;
+	pos_x = pos_x - 65;
 }
 
 global.timer = "";

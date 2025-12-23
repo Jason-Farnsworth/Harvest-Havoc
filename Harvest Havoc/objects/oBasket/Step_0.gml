@@ -55,6 +55,6 @@ if (playerCheck != noone){
 	else pumpScore = pumpNumber * 1000
 	global.player_score += pumpScore
 	instance_destroy(oPumpkin, false);
-	audio_play_sound(sfxPoof, 0, false);
+	if global.sfxControl audio_play_sound(sfxPoof, 0, false);
 	
 }

@@ -25,6 +25,10 @@ if (global.gameMode == "time"){
 	global.player_lives = 3;
 	//global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
 }
+if (global.gameMode == "survival"){
+	global.survival_player_high_score = ini_read_real("save4", "Survival High Score", 0);
+	global.player_lives = 3;
+}
 //global.player_lives = 3;
 global.player_level = "Level 1";
 global.score_text = "";

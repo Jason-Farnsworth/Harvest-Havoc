@@ -20,7 +20,7 @@ if (playerCheck != noone){
 		global.score_text = 2000;
 	}
 	
-	audio_play_sound(sfxFruit, 0, false);
+	if global.sfxControl audio_play_sound(sfxFruit, 0, false);
 	instance_destroy(self, false);
 	instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
 	global.text_timer = 30;

@@ -23,7 +23,7 @@ if (playerCheck != noone){
 		}
 		
 		instance_destroy(self, false);
-		audio_play_sound(sfxObstacle, 0, false);
+		if global.sfxControl audio_play_sound(sfxObstacle, 0, false);
 		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
 		global.text_timer = 30;
 		global.display_text = true;
@@ -41,7 +41,7 @@ if (playerCheck != noone){
 		//show_debug_message("hello")
 		if (global.player_lives > 0){
 			//give player i-frames and knock them back a bit
-			audio_play_sound(sfxHurt, 0, false);
+			if global.sfxControl audio_play_sound(sfxHurt, 0, false);
 			playerCheck.isInvincible = true;
 			playerCheck.flashActive = true;
 			if (playerCheck.isRight){

@@ -6,8 +6,8 @@
   "name":"oDirtWinter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Survival Mode",
+    "path":"folders/Objects/Survival Mode.yy",
   },
   "parentObjectId":null,
   "persistent":false,

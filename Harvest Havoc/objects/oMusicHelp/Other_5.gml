@@ -1,1 +1,1 @@
-audio_stop_sound(sHelpMusic);
+//audio_stop_sound(sHelpMusic);

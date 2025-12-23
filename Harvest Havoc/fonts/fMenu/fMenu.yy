@@ -106,7 +106,7 @@
     "123":{"character":123,"h":96,"offset":2,"shift":28,"w":23,"x":872,"y":2,},
     "124":{"character":124,"h":96,"offset":7,"shift":22,"w":8,"x":862,"y":2,},
     "125":{"character":125,"h":96,"offset":3,"shift":28,"w":22,"x":507,"y":100,},
-    "9647":{"character":9647,"h":96,"offset":15,"shift":48,"w":18,"x":80,"y":296,},
+    "9647":{"character":9647,"h":96,"offset":16,"shift":78,"w":45,"x":80,"y":296,},
   },
   "hinting":0,
   "includeTTF":false,
@@ -133,7 +133,10 @@
   "sdfSpread":8,
   "size":60.0,
   "styleName":"Rust",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }

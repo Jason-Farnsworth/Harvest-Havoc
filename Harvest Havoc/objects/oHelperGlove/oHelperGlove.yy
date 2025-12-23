@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Allows you to run into obstacles to destroy them to earn points. \\nWasps are worth 1000 points, Squirrels are 2000, and Sickles are 4000.",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Help Menu",
+    "path":"folders/Objects/Help Menu.yy",
   },
   "parentObjectId":{
     "name":"oHelperParent",

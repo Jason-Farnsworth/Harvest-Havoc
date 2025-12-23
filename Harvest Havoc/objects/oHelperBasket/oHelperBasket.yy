@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHelperParent","path":"objects/oHelperParent/oHelperParent.yy",},"propertyId":{"name":"helperText","path":"objects/oHelperParent/oHelperParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Collects all food on screen and adds them to your score.",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Help Menu",
+    "path":"folders/Objects/Help Menu.yy",
   },
   "parentObjectId":{
     "name":"oHelperParent",
