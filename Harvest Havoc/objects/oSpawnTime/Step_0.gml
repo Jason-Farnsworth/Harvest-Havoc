@@ -23,6 +23,7 @@ if (!oControl.game_over){
 			instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
 		}
 		spawnTimer += 1;
+		y_coord = -50;
 	}
 }
 

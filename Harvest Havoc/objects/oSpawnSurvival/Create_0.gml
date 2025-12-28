@@ -12,7 +12,7 @@ list_length_2 = array_length(powerups)
 global.grav = 4;
 global.display_text = false;
 global.text_timer = 30;
-global.GloveHelp = true;
+//global.GloveHelp = true;
 global.nextScore = 0;
 alarm[0] = 30;
 

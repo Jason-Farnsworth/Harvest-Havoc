@@ -1,14 +1,22 @@
 if (oControl.game_over) || (oControl.pause) || (oControl.timer_win){
 	grav = 0;
-	image_angle = image_angle;
+	//image_angle = image_angle;
+	imageAngle = imageAngle
 }
 else {	
-	image_angle -= 2;
+	//image_angle -= 2;
+	imageAngle -= 2;
 	grav = global.grav;
 }
 
 y_vel = grav;
 y = y + y_vel;
+
+objCheck = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, objects, false, false)
+if (objCheck != noone)
+{
+	instance_destroy(self, false);
+}
 
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){

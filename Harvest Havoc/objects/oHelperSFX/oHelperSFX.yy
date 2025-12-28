@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSettingParent","path":"objects/oSettingParent/oSettingParent.yy",},"propertyId":{"name":"helperText","path":"objects/oSettingParent/oSettingParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sound Effects:",},
   ],
   "parent":{
-    "name":"Help Menu",
-    "path":"folders/Objects/Help Menu.yy",
+    "name":"Settings Menu",
+    "path":"folders/Objects/Help Menu/Settings Menu.yy",
   },
   "parentObjectId":{
     "name":"oSettingParent",

@@ -1,4 +1,4 @@
-y_coord = -30;
+y_coord = -20;
 spawnTimer = 0;
 //spawnTimer_2 = 30; //spawning obstacles will be offset by 30 seconds when compared to food spawn
 //spawnTimer_3 = 50; //spawning powerups will be offset by 50 seconds when compared to food spawn
@@ -13,7 +13,7 @@ list_length_3 = array_length(powerups2);
 global.grav = 4;
 global.display_text = false;
 global.text_timer = 30;
-global.GloveHelp = false;
+//global.GloveHelp = false;
 global.nextScore = 0;
 
 reset_1 = false;
@@ -40,21 +40,21 @@ spawnTimerCutoff_Food_3 = 35;
 spawnTimerCutoff_Obstacles_3 = 35;
 
 //Level 4 spawn rates
-spawnTimerCutoff_Food_4 = 25;
-spawnTimerCutoff_Obstacles_4 = 25;
+spawnTimerCutoff_Food_4 = 20;
+spawnTimerCutoff_Obstacles_4 = 20;
 
 //Level 5 spawn rates
-spawnTimerCutoff_Food_5 = 15;
-spawnTimerCutoff_Obstacles_5 = 15;
+spawnTimerCutoff_Food_5 = 10;
+spawnTimerCutoff_Obstacles_5 = 10;
 
 //Level 6 spawn rates
-spawnTimerCutoff_Food_6 = 10;
-spawnTimerCutoff_Obstacles_6 = 10;
+spawnTimerCutoff_Food_6 = 7;
+spawnTimerCutoff_Obstacles_6 = 7;
 
 //Level 7 spawn rates
-spawnTimerCutoff_Food_7 = 7;
-spawnTimerCutoff_Obstacles_7 = 7;
+spawnTimerCutoff_Food_7 = 5;
+spawnTimerCutoff_Obstacles_7 = 5;
 
 //Level 8 spawn rates
-spawnTimerCutoff_Food_8 = 10;
-spawnTimerCutoff_Obstacles_8 = 5;
+spawnTimerCutoff_Food_8 = 3;
+spawnTimerCutoff_Obstacles_8 = 3;

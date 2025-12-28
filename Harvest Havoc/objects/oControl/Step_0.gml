@@ -138,10 +138,12 @@ else if (game_over){
 		if (global.gameMode == "normal"){
 			global.grav = 2;
 			global.player_lives = 3;
+			y_coord = -30;
 		}
 		if (global.gameMode == "hard"){
 			global.grav = 3;
 			global.player_lives = 2;
+			y_coord = -30;
 		}
 		if (global.gameMode == "time"){
 			global.grav = 3;
@@ -150,6 +152,7 @@ else if (game_over){
 			global.timer_min = 2;
 			global.timer_sec = 0;
 			global.timer_mil = 0;
+			y_coord = -30;
 		}
 		if (global.gameMode == "survival"){
 			global.grav = 4;

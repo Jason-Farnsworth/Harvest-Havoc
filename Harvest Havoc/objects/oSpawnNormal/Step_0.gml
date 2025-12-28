@@ -15,6 +15,7 @@ if (!oControl.game_over){
 			spawnTimer += 1;
 		}
 		else if (global.player_score < 100000){
+			y_coord = -50;
 			if (!reset_1) spawnTimer = 0;
 			global.normalNextScore = 100000 - global.player_score;
 			global.player_level = "Level 2";
@@ -25,12 +26,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_2 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(500, 510)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
-				var x_coord = random_range(400, 1000)
+				var x_coord = random_range(500, 510)
 				var randObjectIndex = irandom(list_length_2 - 1);
 				while (global.player_lives == 3) && (randObjectIndex < 2)
 				{

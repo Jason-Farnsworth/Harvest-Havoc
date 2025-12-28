@@ -1,0 +1,1 @@
+global.timerGraphic = !global.timerGraphic

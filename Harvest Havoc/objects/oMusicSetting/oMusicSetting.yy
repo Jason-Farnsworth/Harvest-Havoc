@@ -4,15 +4,19 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oMusicSetting",
   "overriddenProperties":[],
   "parent":{
-    "name":"Help Menu",
-    "path":"folders/Objects/Help Menu.yy",
+    "name":"Settings Menu",
+    "path":"folders/Objects/Help Menu/Settings Menu.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oSettingParent",
+    "path":"objects/oSettingParent/oSettingParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHelper",
-    "path":"sprites/sHelper/sHelper.yy",
+    "name":"sButton",
+    "path":"sprites/sButton/sButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

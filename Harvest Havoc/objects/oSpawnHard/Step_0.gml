@@ -12,6 +12,11 @@ if (!oControl.game_over){
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
+			if (spawnTimer % spawnTimerCutoff_Obstacles == 30){ //offsetting this spawn
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
+			}
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
@@ -21,9 +26,11 @@ if (!oControl.game_over){
 				}
 				instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
 			}
+			
 			spawnTimer += 1;
 		}
 		else if (global.player_score < 100000){
+			y_coord = -50;
 			if (!reset_1) spawnTimer = 0;
 			global.hardNextScore = 100000 - global.player_score;
 			global.player_level = "Level 2";
@@ -34,6 +41,11 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_2 == 0){
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
+			}
+			if (spawnTimer % spawnTimerCutoff_Obstacles_2 == 30){//offsetting this spawn
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
@@ -64,6 +76,16 @@ if (!oControl.game_over){
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
+			if (spawnTimer % spawnTimerCutoff_Food_3 == 50){ //offsetting this spawn
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
+			}
+			if (spawnTimer % spawnTimerCutoff_Obstacles_3 == 30){ //offsetting this spawn
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
+			}
 			if (spawnTimer % spawnTimerCutoff_Power == 0){
 				var x_coord = random_range(400, 1000)
 				var randObjectIndex = irandom(list_length_2 - 1);
@@ -87,6 +109,11 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_4 == 0){
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
+			}
+			if (spawnTimer % spawnTimerCutoff_Obstacles_3 == 0){ //Just to have some additional obstacles fall, but fall slower than the main obstacle spawn
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);

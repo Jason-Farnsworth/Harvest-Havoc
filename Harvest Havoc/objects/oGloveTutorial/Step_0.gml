@@ -1,4 +1,5 @@
 if (!oControl.pause){
+	//show_debug_message("test 3")
 	glove_text_timer -= 1;
 	//show_debug_message(text_timer);
 	if (glove_text_timer < 0){

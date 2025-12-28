@@ -8,8 +8,8 @@
   "name":"oSettingParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Help Menu",
-    "path":"folders/Objects/Help Menu.yy",
+    "name":"Settings Menu",
+    "path":"folders/Objects/Help Menu/Settings Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

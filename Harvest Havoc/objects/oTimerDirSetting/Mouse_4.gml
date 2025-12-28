@@ -1,0 +1,1 @@
+global.timerDirUp = !global.timerDirUp

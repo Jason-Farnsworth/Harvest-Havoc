@@ -4,10 +4,16 @@ else grav = global.grav;
 y_vel = grav;
 y = y + y_vel;
 
-var objCheck = instance_place(x, y, objects)
+/*var objCheck = instance_place(x, y, objects)
 if (objCheck != noone){
 	instance_destroy(objCheck, false);
-}
+}*/
+
+/*objCheck = collision_circle(x, y, 50, objects, false, true)
+if (objCheck != noone)
+{
+	instance_destroy(objCheck, false);
+}*/
 
 var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
