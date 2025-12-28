@@ -1,6 +1,7 @@
 ini_open("savedata.ini");
 window_set_caption("Harvest Havoc");
 global.firstTime = ini_read_real("firstTime", "Submenu", true);
+global.GloveHelp = ini_read_real("firstTime", "Glove", true);
 
 
 ini_close();

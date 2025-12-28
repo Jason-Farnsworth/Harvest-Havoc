@@ -6,5 +6,8 @@ if (!oControl.pause){
 		//show_debug_message("score is gone")
 		instance_destroy(self, false);
 		global.GloveHelp = false;
+		ini_open("savedata.ini");
+		ini_write_real("firstTime", "Glove", global.GloveHelp);
+		ini_close();
 	}
 }

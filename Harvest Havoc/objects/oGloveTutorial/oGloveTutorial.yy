@@ -10,8 +10,8 @@
   "name":"oGloveTutorial",
   "overriddenProperties":[],
   "parent":{
-    "name":"Normal Mode",
-    "path":"folders/Objects/Normal Mode.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
