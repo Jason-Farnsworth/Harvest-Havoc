@@ -5,20 +5,6 @@ if (flashAlpha > 0){
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, 1, 0, flashColor, flashAlpha);
 	shader_reset();
 }
-/*
-if (canDestroy){
-	draw_set_color(c_white);
-	draw_set_font(fPowerupTimer);
-	draw_set_halign(fa_center);
-	draw_text(550, 60, "Glove Timer: " + string(canDestroyTimer));
-}
-
-if (hasBoot){
-	draw_set_color(c_white);
-	draw_set_font(fPowerupTimer);
-	draw_set_halign(fa_center);
-	draw_text(850, 60, "Boot Timer: " + string(hasBootTimer));
-}*/
 
 /// @desc Powerup Timers
 if (global.timerGraphic){
@@ -49,7 +35,7 @@ else{
 			draw_sprite_ext(sTimerUpBG, 0, 900, 85, 1, 1, 0, c_white, 0.75); //Making bg transparent so players can still see falling obstacles
 			draw_text_color(900, 60, "Glove Timer: " + string(canDestroyTimer), c_white, c_white, c_white, c_white, 1);
 		}
-		else draw_text(1000, 710, "Glove Timer: " + string(canDestroyTimer));
+		else draw_text(1125, 710, "Glove Timer: " + string(canDestroyTimer));
 	}
 
 	if (hasBoot){
@@ -60,6 +46,6 @@ else{
 			draw_sprite_ext(sTimerUpBG, 0, 550, 85, 1, 1, 0, c_white, 0.75) //Making bg transparent so players can still see falling obstacles
 			draw_text_color(550, 60, "Boot Timer: " + string(hasBootTimer), c_white, c_white, c_white, c_white, 1);
 		}
-		else draw_text(400, 710, "Boot Timer: " + string(hasBootTimer));
+		else draw_text(350, 710, "Boot Timer: " + string(hasBootTimer));
 	}
 }

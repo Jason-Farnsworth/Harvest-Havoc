@@ -15,7 +15,6 @@ if (!oControl.game_over){
 			spawnTimer += 1;
 		}
 		else if (global.player_score < 100000){
-			y_coord = -50;
 			if (!reset_1) spawnTimer = 0;
 			global.normalNextScore = 100000 - global.player_score;
 			global.player_level = "Level 2";
@@ -204,5 +203,6 @@ if (!oControl.game_over){
 			spawnTimer += 1;
 			reset_7 = true;
 		}
+		y_coord = -50;
 	}
 }
