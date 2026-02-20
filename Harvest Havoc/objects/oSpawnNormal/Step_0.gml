@@ -1,5 +1,9 @@
 if (!oControl.game_over){
 	if (!oControl.pause){
+		if (global.MoveHelp) {
+			//show_debug_message("test 2")
+			instance_create_layer(680, 250, "GloveTutorial", oMoveTutorial);
+		}
 		if (global.player_score < 50000){
 			global.normalNextScore = 50000 - global.player_score;
 			if (spawnTimer % spawnTimerCutoff_Food == 0){
@@ -153,12 +157,17 @@ if (!oControl.game_over){
 			global.player_level = 7;
 			global.grav = 7;
 			global.player_level = "Level 7";
-			if (spawnTimer % spawnTimerCutoff_Food_6 == 0){
+			if (spawnTimer % spawnTimerCutoff_Food_7 == 0){
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}
-			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
+			if (spawnTimer % spawnTimerCutoff_Obstacles_7 == 0){
+				var x_coord = random_range(200, 1200)
+				var randObjectIndex = irandom(list_length_1 - 1);
+				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
+			}
+			if (spawnTimer % spawnTimerCutoff_Obstacles_7 == 10){
 				var x_coord = random_range(200, 1200)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
@@ -179,7 +188,7 @@ if (!oControl.game_over){
 			if (!reset_7) spawnTimer = 0;
 			global.player_level = 8;
 			global.normalNextScore = 0;
-			global.grav = 7;
+			global.grav = 8;
 			global.player_level = "Level 8";
 			if (spawnTimer % spawnTimerCutoff_Food_8 == 0){
 				var x_coord = random_range(200, 1200)

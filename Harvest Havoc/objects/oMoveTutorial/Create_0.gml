@@ -1,0 +1,1 @@
+move_text_timer = 250

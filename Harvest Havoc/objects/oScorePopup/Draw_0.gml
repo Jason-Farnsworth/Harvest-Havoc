@@ -1,8 +1,10 @@
 draw_set_color(c_dkgray);
 draw_set_font(fScorePopupBg);
 draw_set_halign(fa_center);
+draw_set_alpha(0.75);
 draw_text(x, y-8, text_to_show);
 draw_set_color(c_white);
 draw_set_font(fScorePopup);
 draw_set_halign(fa_center);
 draw_text(x, y-10, text_to_show);
+draw_set_alpha(1);

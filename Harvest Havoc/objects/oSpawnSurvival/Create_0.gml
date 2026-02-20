@@ -25,6 +25,7 @@ reset_6 = false;
 reset_7 = false;
 
 
+spawnTimerCutoff_Snowball = 700;
 //Level 1 spawn rates
 //spawnTimerCutoff_Food = 80;
 spawnTimerCutoff_Obstacles = 50;

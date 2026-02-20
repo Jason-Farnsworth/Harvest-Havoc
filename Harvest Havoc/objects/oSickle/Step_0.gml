@@ -46,12 +46,12 @@ if (playerCheck != noone){
 			if global.sfxControl audio_play_sound(sfxHurt, 0, false);
 			playerCheck.isInvincible = true;
 			playerCheck.flashActive = true;
-			if (playerCheck.isRight){
+			/*if (playerCheck.isRight){
 				playerCheck.x -= 40;
 			}
 			else{
 				playerCheck.x += 40;
-			}
+			}*/
 		global.player_lives -=1;
 		}
 	else oControl.game_over = true;

@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTitleBasket",
-    "path":"sprites/sTitleBasket/sTitleBasket.yy",
+    "name":"sHardBasket",
+    "path":"sprites/sHardBasket/sHardBasket.yy",
   },
   "spriteMaskId":null,
   "visible":true,

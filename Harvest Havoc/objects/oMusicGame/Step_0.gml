@@ -14,10 +14,10 @@ if (oControl.game_over) ||(oControl.pause) || (oControl.timer_win){
 if (oControl.game_over == false) && (restart_trigger) && (!playing_sound){
 	if (oControl.pause == false) && (restart_trigger) && (!playing_sound){
 		if (oControl.timer_win == false) && (restart_trigger) && (!playing_sound){
-			if global.gameMode == "normal" or global.gameMode == "time"{ 
+			if global.gameMode == "normal" or global.gameMode == "survival"{ 
 				global.music = sGameMusic2
 			}
-			else if global.gameMode == "hard" or global.gameMode == "survival"{
+			else if global.gameMode == "hard" or global.gameMode == "time"{
 				global.music = sGameMusic4
 			}
 			

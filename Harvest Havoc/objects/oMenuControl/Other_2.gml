@@ -7,4 +7,5 @@ global.sfxControl = true;
 global.timerGraphic = true;
 global.timerDirUp = true;
 //global.firstTime = true; //Comment this out when publishing game
-global.GloveHelp = true; //Uncomment this when having people playtest dev version
+//global.GloveHelp = true; //Uncomment this when having people playtest dev version
+//global.MoveHelp = true; //Uncomment when having people playtest dev version

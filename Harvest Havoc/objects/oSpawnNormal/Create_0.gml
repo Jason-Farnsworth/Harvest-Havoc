@@ -49,6 +49,10 @@ spawnTimerCutoff_Obstacles_5 = 25;
 spawnTimerCutoff_Food_6 = 15;
 spawnTimerCutoff_Obstacles_6 = 15;
 
+//Level 7 spawn rates
+spawnTimerCutoff_Food_7 = 12;
+spawnTimerCutoff_Obstacles_7 = 12;
+
 //Level 8 spawn rates
 spawnTimerCutoff_Food_8 = 8;
 spawnTimerCutoff_Obstacles_8 = 8;

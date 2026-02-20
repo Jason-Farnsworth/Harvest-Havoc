@@ -1,6 +1,6 @@
 audio_stop_sound(global.music);
 
-if global.gameMode == "normal" or global.gameMode == "time"{
+if global.gameMode == "normal" or global.gameMode == "survival"{
 	if global.musicControl{
 		global.music = sGameMusic2;
 		audio_play_sound(global.music, 0, true);

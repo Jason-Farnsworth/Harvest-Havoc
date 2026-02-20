@@ -122,6 +122,7 @@ else if (game_over){
 		}
 		global.switch50k = true;
 		ini_close();
+		global.firstTime = false;
 	}
 	
 	if keyboard_check_pressed(ord("R")){

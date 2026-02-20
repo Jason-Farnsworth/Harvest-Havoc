@@ -20,7 +20,9 @@ if (global.gameMode == "normal" or global.gameMode == "hard" or global.gameMode 
 if (global.gameMode == "time"){
 	draw_text(520, 660, "Current Score: " + string(global.player_score));
 	draw_text(870, 660, "High Score: " + string(global.time_player_high_score));
+	draw_set_font(fPowerupTimer)
 	draw_text(700, 720, "Time: " + global.timer);
+	draw_set_font(fScore)
 	//draw_text(870, 720, "Best Time: " + global.time_player_high_score);
 }
 

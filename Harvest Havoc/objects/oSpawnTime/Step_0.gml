@@ -16,10 +16,6 @@ if (!oControl.game_over){
 		if (spawnTimer % spawnTimerCutoff_Power == 0){
 			var x_coord = random_range(400, 1000)
 			var randObjectIndex = irandom(list_length_2 - 1);
-			while (global.player_lives == 3) && (randObjectIndex < 1)
-			{
-				randObjectIndex = irandom(list_length_2 - 1);
-			}
 			instance_create_layer(x_coord, y_coord, "Powers", powerups[randObjectIndex]);
 		}
 		spawnTimer += 1;

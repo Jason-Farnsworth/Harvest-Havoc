@@ -3,7 +3,7 @@ draw_set_font(fGameOver); //sets font
 draw_set_color(c_yellow);
 draw_set_halign(fa_center); //sets alignment
 draw_set_valign(fa_middle); //sets alignment
-draw_text(x, y + 15, modeText);
+draw_text(x, y + 150, modeText);
 
 //Reset the alignments to defaults
 draw_set_halign(fa_left);

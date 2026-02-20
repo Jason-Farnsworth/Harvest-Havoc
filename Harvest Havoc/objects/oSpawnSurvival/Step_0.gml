@@ -1,6 +1,9 @@
 if (!oControl.game_over){
 	if (!oControl.pause){
-		
+		if (spawnTimer % spawnTimerCutoff_Snowball == 0 and spawnTimer != 0){
+				var x_coord = random_range(300, 1100)
+				instance_create_layer(x_coord, -150, "Food", oSnowball);
+		}
 		if (global.player_score < 75000){
 			global.survivalNextScore = 75000 - global.player_score;
 			/*if (spawnTimer % spawnTimerCutoff_Food == 0){
@@ -9,12 +12,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles == 20){ //Creates a spawning offset without making a new variable
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -40,12 +43,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_2 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_2 == 15){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -71,12 +74,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_3 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_3 == 10){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -103,12 +106,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_4 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_4 == 10){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -134,12 +137,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_5 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_4 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -166,12 +169,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_5 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -199,12 +202,12 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 5){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
@@ -232,17 +235,17 @@ if (!oControl.game_over){
 				instance_create_layer(x_coord, y_coord, "Food", food[randObjectIndex]);
 			}*/
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}
 			if (spawnTimer % spawnTimerCutoff_Obstacles_6 == 0){
-				var x_coord = random_range(200, 1200)
+				var x_coord = random_range(150, 1250)
 				var randObjectIndex = irandom(list_length_1 - 1);
 				instance_create_layer(x_coord, y_coord, "Obstacles", obstacles[randObjectIndex]);
 			}

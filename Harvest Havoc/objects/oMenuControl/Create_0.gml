@@ -1,8 +1,8 @@
 ini_open("savedata.ini");
 window_set_caption("Harvest Havoc");
-global.firstTime = ini_read_real("firstTime", "Submenu", true);
-global.GloveHelp = ini_read_real("firstTime", "Glove", true);
-
+global.firstTime = ini_read_real("firstTime", "Submenu", true); //Uncomment when publishing game
+global.GloveHelp = ini_read_real("firstTime", "Glove", true); //Uncomment when publishing game
+global.MoveHelp = ini_read_real("firstTime", "Move", true); //Uncomment when publishing game
 
 ini_close();
 
