@@ -113,7 +113,7 @@ else if (game_over){
 	
 	
 	//This will only ever happen on Normal Mode, since other modes won't be unlocked
-	if (global.player_score >= 50000){
+	if (global.player_score >= 50000 and global.firstTime == true){
 		ini_open("savedata.ini");
 		ini_write_real("firstTime", "Submenu", false);
 		if (!global.switch50k){
@@ -121,6 +121,7 @@ else if (game_over){
 			global.showNewMode = true;
 		}
 		global.switch50k = true;
+		ini_write_real("firstTime", "NewMode", true);
 		ini_close();
 		global.firstTime = false;
 	}

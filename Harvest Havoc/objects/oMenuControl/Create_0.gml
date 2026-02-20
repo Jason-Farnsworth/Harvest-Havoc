@@ -3,6 +3,7 @@ window_set_caption("Harvest Havoc");
 global.firstTime = ini_read_real("firstTime", "Submenu", true); //Uncomment when publishing game
 global.GloveHelp = ini_read_real("firstTime", "Glove", true); //Uncomment when publishing game
 global.MoveHelp = ini_read_real("firstTime", "Move", true); //Uncomment when publishing game
+global.showNewMode = ini_read_real("firstTime", "NewMode", false);
 
 ini_close();
 
