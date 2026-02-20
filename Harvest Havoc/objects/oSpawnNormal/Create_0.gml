@@ -56,3 +56,7 @@ spawnTimerCutoff_Obstacles_7 = 12;
 //Level 8 spawn rates
 spawnTimerCutoff_Food_8 = 8;
 spawnTimerCutoff_Obstacles_8 = 8;
+
+if (global.MoveHelp) {
+			instance_create_layer(680, 250, "GloveTutorial", oMoveTutorial);
+}

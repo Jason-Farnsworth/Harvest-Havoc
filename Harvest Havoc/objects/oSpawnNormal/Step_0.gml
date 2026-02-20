@@ -1,9 +1,5 @@
 if (!oControl.game_over){
 	if (!oControl.pause){
-		if (global.MoveHelp) {
-			//show_debug_message("test 2")
-			instance_create_layer(680, 250, "GloveTutorial", oMoveTutorial);
-		}
 		if (global.player_score < 50000){
 			global.normalNextScore = 50000 - global.player_score;
 			if (spawnTimer % spawnTimerCutoff_Food == 0){
