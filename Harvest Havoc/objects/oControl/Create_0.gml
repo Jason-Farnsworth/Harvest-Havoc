@@ -10,23 +10,23 @@ objects = [oBasket, oBoots, oGlove, oHeart, oWasp, oPear, oPepper, oPumpkin, oSi
 global.player_score = 0;
 
 if (global.gameMode == "normal") {
-	global.normal_player_high_score = ini_read_real("save1", "High Score", 0);
+	global.normal_player_high_score = ini_read_real("save1", "High Score", 500000);
 	global.player_lives = 3;
 }
 if (global.gameMode == "hard"){
-	global.hard_player_high_score = ini_read_real("save2", "Hard High Score", 0);
+	global.hard_player_high_score = ini_read_real("save2", "Hard High Score", 500000);
 	global.player_lives = 2;
 }
 if (global.gameMode == "time"){
 	/*global.min_player_high_score = ini_read_real("save3", "Best Min Time", 0);
 	global.sec_player_high_score = ini_read_real("save4", "Best Sec Time", 0);
 	global.mil_player_high_score = ini_read_real("save5", "Best Mil Time", 0);*/
-	global.time_player_high_score = ini_read_real("save3", "Time High Score", 0);
+	global.time_player_high_score = ini_read_real("save3", "Time High Score", 250000);
 	global.player_lives = 3;
 	//global.time_player_high_score = string(global.min_player_high_score) + ":" + "0" + string(global.sec_player_high_score) + "." + string(global.mil_player_high_score);
 }
 if (global.gameMode == "survival"){
-	global.survival_player_high_score = ini_read_real("save4", "Survival High Score", 0);
+	global.survival_player_high_score = ini_read_real("save4", "Survival High Score", 500000);
 	global.player_lives = 3;
 }
 //global.player_lives = 3;

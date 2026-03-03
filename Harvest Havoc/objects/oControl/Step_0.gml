@@ -165,6 +165,7 @@ else if (game_over){
 		for (var i=0; i<array_length(objects); i+=1){
 			instance_destroy(objects[i], false);
 		}
+		instance_destroy(oSnowball, false)
 		instance_destroy(oDarken, false);
 		oFarmer.x = 670;
 		oFarmer.y = 540;
