@@ -14,7 +14,7 @@ var playerCheck = instance_place(x, y, oFarmer)
 if (playerCheck != noone){
 	if (playerCheck.hasBoot) {
 		global.player_score += 4000;
-		global.score_text = 4000
+		global.score_text = "2000 x 2"
 	}
 	else {
 		global.player_score += 2000;

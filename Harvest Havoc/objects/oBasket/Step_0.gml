@@ -23,7 +23,7 @@ if (playerCheck != noone){
 	//adds to the score the amount of pears destroyed
 	var pearNumber = instance_number(oPear);
 	with (oPear){
-		if (playerCheck.hasBoot) global.score_text = 4000;
+		if (playerCheck.hasBoot) global.score_text = "2000 x 2";
 		else global.score_text = 2000;
 		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
 		global.text_timer = 200;
@@ -37,7 +37,7 @@ if (playerCheck != noone){
 	//adds to the score the amount of peppers destroyed
 	var pepperNumber = instance_number(oPepper);
 	with (oPepper){
-		if (playerCheck.hasBoot) global.score_text = 8000;
+		if (playerCheck.hasBoot) global.score_text = "4000 x 2";
 		else global.score_text = 4000;
 		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
 		global.text_timer = 200;
@@ -51,7 +51,7 @@ if (playerCheck != noone){
 	//adds to the score the amount of pumpkins destroyed
 	var pumpNumber = instance_number(oPumpkin);
 	with (oPumpkin){
-		if (playerCheck.hasBoot) global.score_text = 2000;
+		if (playerCheck.hasBoot) global.score_text = "1000 x 2";
 		else global.score_text = 1000;
 		instance_create_layer(x, y-10, "Info_Screen", oScorePopup);
 		global.text_timer = 200;
