@@ -195,7 +195,7 @@ else if (global.gameMode == "time" and global.timer_end = true){ //This must be 
 	if (timer_win = false) {
 	if global.sfxControl audio_play_sound(sfxFruit, 0, false);
 	}
-	timer_win = true; //Is necessary so other t6hings pause when timer is 0
+	timer_win = true; //Is necessary so other things pause when timer is 0
 	
 	
 	if (screen_create == false){

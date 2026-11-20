@@ -1,19 +1,12 @@
-key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
-key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-
-
 if (keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("P"))) && (!oControl.game_over){
 	oControl.pause = true;
 }
 
-if (oControl.game_over) || (oControl.pause) || (oControl.timer_win) var move = 0
-else move = key_right - key_left;
-
 if (hasBoot){
-	horiz_move_speed = (move * walk_speed) * 2;
+	horiz_move_speed = (oMovement.move * walk_speed) * 2;
 }
 else{
-	horiz_move_speed = move * walk_speed;
+	horiz_move_speed = oMovement.move * walk_speed;
 }
 vert_move_speed = vert_move_speed + grav;
 
