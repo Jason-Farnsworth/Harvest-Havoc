@@ -12,7 +12,7 @@ if (global.TOUCH_CONTROLS){
 
 if (oControl.game_over) || (oControl.pause) || (oControl.timer_win) move = 0
 else if (global.TOUCH_CONTROLS){
-	if (oBackArrow.mobile_key_left == true) && (oFrontArrow.mobile_key_right = true){
+	if oBackArrow.backArrowTouch =! -1 and oFrontArrow.frontArrowTouch =! -1{
 		move = 0 
 		show_debug_message("both")
 	}
